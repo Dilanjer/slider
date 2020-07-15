@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Slider</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="AH-slider">
+      <div class="slider-btn">
+
+        <div class="AH-prev-btn">
+          <img src="slider/slider-back.svg" alt="">
+        </div>
+
+        <div class="AH-next-btn">
+          <img src="slider/slider-next.svg" alt="">
+        </div>
+
+
+      </div>
+      <div class="AH-dots-cont"></div>
+    </div>
+  </div>
+  <script src="slide.js"></script>
+  <script>
+    let slide = new Slide({
+      dots: true,
+      fade: true,
+      fadeSpeed: 200,
+      imageSrc: [
+        "slider/sl-1.jpg",
+        "slider/sl-2.jpg",
+        "slider/sl-3.jpg",
+      ],
+    });
+    slide.sliderInit();
+  </script>
+</body>
+
+</html>
